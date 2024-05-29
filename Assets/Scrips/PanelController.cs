@@ -16,9 +16,10 @@ public class PanelController : MonoBehaviour
     void Update()
     {
         tiempo = tiempo + Time.deltaTime;
-        if (tiempo >= 5)
+        if (tiempo >= 1.5)
         {
             this.gameObject.SetActive(false);
+            tiempo = 0;
         }
     }
      
